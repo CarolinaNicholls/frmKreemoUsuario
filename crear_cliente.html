@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formClientes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.10.12/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="css/estilosC.css">
+
+</head>
+<body>
+    <div class="container">
+            <main>
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 l10">
+                            <div class="input-fiel col s12">
+                                <header style="color:white"> <h1>kreemo</h1></header>
+                            </div>
+                            <div class="input-fiel col s12">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" placeholder="Nombre" id="nombre" title="Ingrese su nombre." class="solo_mayus_letras">
+                                <label for="" id="vNombre"></label>
+                            </div>
+                            <div class="input-fiel col s12">
+                                <label for="apellido">Apellido</label>
+                                <input type="text" placeholder="Apellido" id="apellido" title="Ingrese su apellido." class="solo_mayus_letras">
+                                <label for="" id="vApellido"></label>
+
+                            </div>
+                            <div class="input-fiel col s12">
+                                <label for="documento">Documento</label>
+                                <input type="text" placeholder="Documento" id="documento" title="Ingrese su documento." class="solo_numeros">
+                                <label for="" id="vDocumento"></label>
+
+                            </div>
+                            <div class="input-fiel col s12">
+                                <label for="nombre">Telefono</label>
+                                <input type="text" placeholder="Teléfono" id="telefono" title="Ingrese su número de teléfono." class="solo_numeros">
+                                <label for="" id="vTelefono"></label>
+
+                            </div>
+                           
+                            <div class="input-fiel col s12">
+                                <label for="nombre">Dirección</label>
+                                <input type="text" placeholder="Dirección" id="direccion" title="Ingrese su dirección.">
+                                <label for="" id="vDireccion"></label>
+
+                            </div>
+                            <div class="input-fiel col s12">
+                                <label for="nombre">Correo</label>
+                                <input type="text" placeholder="Correo" id="correo" title="Ingrese su correo electrónico.">
+                                <label for="" id="vCorreo"></label>
+
+                            </div>
+                            <div class="input-fiel col s12">
+                                <label for="nombre">Cargo</label>
+                                <input type="text" placeholder="Cargo" id="cargo" title="Ingrese su cargo." class="solo_mayus_letras">
+                                <label for="" id="vCargo"></label>
+
+                            </div>
+                            <div class="input-fiel col s12">
+                                <label for="nombre">Nombre De Obra</label>
+                                <input type="text" placeholder="Nombre De La Obra" id="nombreObra" title="Ingrese nombre de la obra." class="solo_mayus_letras">
+                                <label for="" id="vNOmbreObra"></label>
+
+                            </div>
+                            <div class="input-fiel col s12">
+                                <div class="botones">
+                                    <a class="waves-effect waves-light btn-large" id="registrar" >Registrar</a>
+                                    <a class="waves-effect waves-light btn-large" id="limpiar" onclick="limpiar()" >limpiar</a>
+                                    <a class="waves-effect waves-light btn-large" id="salir" onclick="salir()">Volver</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </nav>
+    </div>
+</body>
+<footer>
+    <div class="footer" style="margin-top: 5rem;">
+      <i><b>OLMEIRO OROZCO ORTIZ</b></i>
+  </div>
+</footer>
+<script src="js/funcionesC.js"></script>
+</html>

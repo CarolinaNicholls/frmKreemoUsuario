@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+
+     <link rel="stylesheet" href="css/estilosCot.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.10.12/dist/sweetalert2.all.min.js"></script>
+     
+
+</head>
+<body>
+     
+<div class="container">
+
+     <div class="card" style="width: 50rem;" >
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Crear  cotizacion</h5>
+          
+            <form>
+
+               <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">Cliente</label>
+                      <label style="color: red;" id="validacion_cliente"></label>
+                      <input type="text" class="form-control solo_letras" id="cliente">
+                      <label style="color: red;" id="validacion_cliente2"></label>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">Direccion</label>
+                      <label style="color: red;" id="validacion_direccion"></label>
+                      <input type="text" class="form-control" id="direccion">
+                      <label style="color: red;" id="validacion_direccion2"></label>
+                    </div>
+               </div>
+
+               <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">identificacion</label>
+                      <label style="color: red;" id="validacion_identificacion"></label>
+                      <select class="form-control" id="identificacion">
+                         <option value="0">Slelecione una opcion..</option>
+                         <option value="1">NIT</option>
+                         <option value="2">CC</option>
+                    </select>
+                    <label style="color: red;" id="validacion_identificacion2"></label>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">Documento</label>
+                      <label style="color: red;" id="validacion_documento"></label>
+                      <input type="text" class="form-control solo_numeros" id="documento">
+                      <label style="color: red;" id="validacion_documento2"></label>
+                    </div>
+               </div>
+
+               <div class="form-row">
+                    
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">Tipo concreto</label>
+                      <label style="color: red;" id="validacion_tipocon"></label>
+                      <select class="form-control" id="tipo_concreto">
+                         <option value="0">Slelecione una opcion..</option>
+                         <option value="1">Pilas</option>
+                         <option value="2">Loza</option>
+                         <option value="3">Bases</option>
+                         <option value="4">Reforzado</option>
+                    </select>
+                    <label style="color: red;" id="validacion_tipocon2"></label>
+                    </div>
+                    <div class="form-group col-md-6">
+                         <label for="inputPassword" class="">Etapa</label>
+                         <label style="color: red;" id="validacion_etapa"></label>
+                    <div class="col-sm-10">
+                         <input class="form-check-input" type="radio" name="etapa" id="pilas" >
+                         <label class="form-check-label" for="exampleRadios1">
+                         Pilas
+                         </label> <br>
+                         <input class="form-check-input" type="radio" name="etapa" id="estructura" >
+                         <label class="form-check-label" for="exampleRadios1">
+                         Estructura
+                         </label>
+                         <label style="color: red;" id="validacion_etapa2"></label>
+                    </div>
+                       </div>
+               </div>
+
+               
+               <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">Telefono</label>
+                      <label style="color: red;" id="validacion_cel"></label>
+
+                      <input type="text" class="form-control solo_numeros" id="telefono">
+                      <label style="color: red;" id="validacion_cel2"></label>
+
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">Fecha de inicio</label>
+                      <label style="color: red;" id="validacion_fecha"></label>
+                      
+                      <input type="date" class="form-control" id="fecha" name="fecha">
+                      <label style="color: red;" id="validacion_fecha2"></label>
+                    </div>
+               </div>
+               
+              
+                  <div class="form-group">
+                    <div class="form-check">
+
+                         <input type="checkbox" name="condiciones" id="condiciones">
+          <label for="">Terminos y Condiciones</label>
+          
+          <label style="color: red;" id="validacion_condiciones"></label>
+   
+                     
+                    </div>
+                  </div>
+
+               
+             </form>
+          
+          </div>
+          <div class="botones">
+               <button type="button" id="btncotizar" class="btn btn-secondary" onclick="">Cotizar</button>
+               <button type="button" id="btnlimpiar"class="btn btn-secondary" onclick="">Limpiar</button>
+               <button  class="btn btn-secondary" name="btnVolver" id="btnVolver" onclick="location.href='index.html'"> Volver</button>
+          </div>
+          <br>
+
+        </div>
+
+     </div>
+
+     <footer>
+        <div class="footer" style="margin-top: 2rem;">
+          <i><b>JUAN FELIPE GARCIA</b></i>
+      </div>
+    </footer>
+     <script src="js/funcionesCot.js"></script>
+     <script src="js/validacionesCotizacion.js"></script>
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

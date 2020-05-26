@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Visitas</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.10.12/dist/sweetalert2.all.min.js"></script>
+
+</head>
+
+<body  class="body">
+   
+    <div class="card" style="max-width: 45rem;">
+        <div class="card-header" style="background-color:#B52407; color: white;"><b> AGENDA DE VISITAS </b></div>
+        <div class="card-body text-dark">
+            <form name="frmReserva" id="frmReserva" action="">
+              <label><b>Tipo de Visita</b> </label> 
+                Comercial <input type="radio" name="TipoVisita" id="TipoVisita">
+                Viabilidad <input type="radio" name="TipoVisita" id="TipoVisita">
+                <label id="validacion_tvisita" class="color_rojo"></label>
+              <br>
+              <label><i class="fas fa-address-card"></i> <b>Documento </b></label> 
+              <input size="10"type="Textbox" name="documento" id="documento" class="solo_numeros">
+              <label id="validacion_documento" class="color_rojo"></label>
+              <label><b>Tipo Documento</b></label><select id="tipodocumento" name="tipodocumento">
+                    <option value="">Seleccione</option>
+                    <option value="CC">CC</option>
+                    <option value="TI">NIT</option>
+                     </select>
+                  <label id="validacion_tipodocumento" class="color_rojo"></label>
+                <br> 
+                <label><b>Nombre</b></label><input type="Text" class="solo_letras" title="Ingrese su Nombre" size="14" name="nombre" id="nombre">
+                <label id="validacion_nombre" class="color_rojo"></label>
+                <label><b>Apellidos </b></label><input type="Text" class="solo_letras" title="Ingrese un Apellido" size="14" name="apellido" id="apellido">
+                <label id="validacion_apellido" class="color_rojo"></label>
+                <br> 
+                <label><b>Dirección</b></label><input type="Text" size="20" name="direccion" id="direccion"  placeholder="Dirección de obra" title="Ingrese una dirección" >
+                <label id="validacion_direccion" class="color_rojo"></label>
+                <br>
+                <label>Observaciones(opcional)</label><textarea name="descripcion" id="descripcionp5" rows="1"></textarea>
+                <br>
+                <label><b>Ciudad</b></label> <select id="ciudad" name="ciudad" title="Seleccione una ciudad">
+                            <option value="">Elige una opción</option>
+                            <option value="Rionegro">Medellín</option>
+                            <option value="Panama">Bello</option>
+                            <option value="Pereira">Envigaod</option>
+                          </select>
+                <label id="validacion_ciudad" class="color_rojo"></label>
+                <br>
+                 <label><b>Fecha Visita</b> </label>
+                 <input class="calendarioI" title="Seleccione una fecha" id="fechaV" name="fechaV" data-date-format="d/M/y" size="8"> 
+                 <label id="validacion_fvisita" class="color_rojo"></label>
+                <br>
+                <label><b>Correo Electrónico</b></label>
+                <input type="email" name="correo" title="Ingrese un correo electrónico"  id="correo">
+                <label id="validacion_correo"class="color_rojo"></label> 
+                <br>
+                <label class="color_rojo"> * Campos obligatorios</label>
+                
+            </form>
+            <button  class="btn btn-secondary" name="btnVolver" id="btnVolver" onclick="location.href='index.html'"> Volver</button>
+            <button class="btn btn-secondary" type="submit" id="btnregistrar_visita" >Registrar</button>
+            <button class="btn btn-secondary" type="button" id="btnlimpiar">Limpiar</button>
+           
+        </div>  
+    </div>
+    </div>
+<br>
+ <footer>
+        <div class="footer" style="margin-top: 5rem;">
+          <i><b>LUISA FERNANDA ZABALA ORTIZ</b></i>
+      </div>
+ </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="js/funcionesV.js"></script>
+</html>
+</body>
+</html>
